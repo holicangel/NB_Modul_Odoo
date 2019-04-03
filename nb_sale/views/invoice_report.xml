@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+<!-- Inherit quotation report (from module sale) -->
+        <report
+            id="report_invoice_document"
+            string="NB Invoice"
+            model="account.invoice.report"
+            report_type="qweb-pdf"
+            file="account.report_invoice"
+            name="account report invoice"
+            menu="True"
+         />
+
+
+
+    </data>
+</odoo>
