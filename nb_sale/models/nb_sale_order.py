@@ -8,10 +8,10 @@ class SaleOrder(models.Model):
     kepada = fields.Char(string='Nama Penerima')
     # tanggal_order = fields.Date(string="Tanggal Dibuat")
     # tanggal_validasi = fields.Date(string="Tanggal Validasi")
-    pembayaran = fields.Selection([
-            ('satu', 'Satu Bulan'),
-            ('dua', 'Dua Bulan'),
-        ], string='Jangka Pembayaran')
+    # pembayaran = fields.Selection([
+    #         ('satu', 'Satu Bulan'),
+    #         ('dua', 'Dua Bulan'),
+    #     ], string='Jangka Pembayaran')
 
   
 

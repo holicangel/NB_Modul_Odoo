@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <data>
+            <template id="external_layout_footer_inherit" inherit_id="report.external_layout_footer" priority="17">
+                <xpath expr="//div[@class='footer']" position="replace">
+                    <div class="footer">
+                        <div class="row zero_min_height">
+                            <div class="col-xs-12">
+                                <div style="border-bottom: 1px solid black;"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12" style="font-size:13px;">
+                                <center>Head Office : 18 Office Park 6th Floor Suite C, Jl TB Simatupang Kav.18 Jakarta 12520
+                                <br/>
+                                Phone : +62-21-22783198 | +62-21-22708249
+                                <br/>
+                                Factory : Jl. Raya Narogong Km. 14 Pangkalan V Bantar Gebang Bekasi 17152
+                                <br/>
+                                Phone : +62-21-8250659 | Fax : +62-21-825-0248
+                                <br/>
+                                website : www.nusatama.com</center> 
+                                <!-- <img src="\nb_sale\static\src\img\footer.png" width="45%"/> -->
+                            </div>
+                        </div>
+                        
+                    </div>
+                </xpath>
+                <!-- <xpath expr="//div[@class='header']" position="replace">
+                    <div class="header">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                
+                            </div>
+                            <div class="col-xs-9 text-right" style="margin-top:20px;">
+                            <h5>Custom Header</h5>
+                            </div>
+                        </div>
+                        <div class="row zero_min_height">
+                            <div class="col-xs-12">
+                                <div style="border-bottom: 1px solid black;"/>
+                            </div>
+                        </div>        
+                    </div>
+                </xpath> -->
+            </template>
+        </data>
+    </odoo>

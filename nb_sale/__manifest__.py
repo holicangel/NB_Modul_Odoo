@@ -4,16 +4,21 @@
     'version': '0.1',
     'depends': [
             'sale',
+            
         
     ],
     'data': [
                 'views/quotation_form.xml', # selalu gunakan koma
                 'views/nb_sale_order_report.xml',
+                'views/nb_invoice_report.xml',
+                'views/nb_payment_receipt.xml',
                 'views/paperformat.xml',
-        #     'views/kg_invoice_report.xml', # selalu gunakan koma
-        #     'views/sale_order_report.xml', # selalu gunakan koma
-        #     'views/invoice_report.xml', # selalu gunakan koma
-        #     'views/report_invoice_document.xml', # selalu gunakan koma
+                'views/dateformat.xml',
+                'views/nb_header.xml',
+                'views/nb_footer.xml',
+             
+       
+      
         # selalu gunakan koma
             
     ],

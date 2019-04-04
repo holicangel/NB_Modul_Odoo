@@ -26,10 +26,10 @@
                                 </div>
                             </div>
                             <div class="col-xs-5 col-xs-offset-1 text-align:right">
-                                <span t-if="doc.tanggal_order" class="col-xs-3"></span>
+                                <span t-if="doc.date_order" class="col-xs-3"></span>
                                 <strong t-if="doc.state not in ['draft','sent']"></strong>
                                 <strong t-if="doc.state in ['draft','sent']"></strong>
-                                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Jakarta, <span t-field="doc.tanggal_order"/>
+                                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Jakarta, <span t-field="doc.date_order" t-field-options='{"format": "dd/MMM/yyyy"}'/>
                                 <p></p>
                                 <p t-if="doc.client_order_ref" class="col-xs-3">
                                 Cust Ref :

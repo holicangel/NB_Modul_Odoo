@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
-<t t-name="account.report_invoice_document">
-                <t t-call="report.external_layout">
-                    <t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})"/>
-                    
-                        
-                    
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <template id="nb_invoice_template">
+            <t t-call="report.external_layout">
+                <t t-set="o" t-value="docs.with_context({'lang':docs.partner_id.lang})"/>                                                          
                     <div class="page">
                         
                         
@@ -25,8 +25,13 @@
                             <p t-if="o.date_invoice">Tgl (Date) :<span t-field="o.date_invoice"/></p>
                             <p t-if="o.origin"> Purchase Order : <span t-field="o.origin"/></p>
                             <p>Surat Jalan :</p>
-                            <p><u>Tgl Pembayaran</u> :<p>(Due Date)</p>
-                            </p>
+                            <!-- <span t-if="o.date_due and o.type == 'out_invoice' and (o.state == 'open' or o.state == 'paid')">
+                    
+                               
+                                <p><u>Tgl Pembayaran</u> : <span t-field="o.date_due"/><p>(Due Date) </p>
+                                </p>
+                            </span> -->
+                            
                             
                             </div>
                         
@@ -52,10 +57,7 @@
                                 <strong>Tgl (Date):</strong>
                                 <p t-field="o.date_invoice"/>
                             </div> -->
-                            <div class="col-xs-2" t-if="o.date_due and o.type == 'out_invoice' and (o.state == 'open' or o.state == 'paid')">
-                                <strong>Due Date:</strong>
-                                <p t-field="o.date_due"/>
-                            </div>
+                            
                         <!--  <div class="col-xs-2" t-if="o.origin">
                                 <strong>Source:</strong>
                                 <p t-field="o.origin"/>
@@ -123,7 +125,7 @@
                                         <tr>
                                             <td><span t-esc="amount_by_group[0] if len(o.tax_line_ids) &gt; 1 else (o.tax_line_ids.tax_id.description or o.tax_line_ids.tax_id.name)"/></td>
                                             <td class="text-right">
-                                                <span t-esc="amount_by_group[2]"/>
+                                                <span t-esc="amount_by_group[1]"/>
                                             </td>
                                         </tr>
                                     </t>
@@ -199,6 +201,16 @@
                             <span t-field="o.fiscal_position_id.note"/>
                         </p>
                     </div>
-                </t>
-</t>
-
+            </t>
+        </template>
+        <report
+            id="invoice_hardcopy"
+            model="account.invoice"
+            string="NB Invoice"
+            name="nb_sale.nb_invoice_template"
+            file="nb_sale.nb_invoice_template"
+            report_type="qweb-pdf"
+            menu ="True"
+        />
+    </data>
+</odoo>
