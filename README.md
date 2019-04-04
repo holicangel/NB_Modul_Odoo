@@ -1,6 +1,8 @@
 # NB_Modul_Odoo
 modul odoo untuk Nusatama Berkah
 
-Berisi custom modul sales serta Custom Report
+Berisi Modifikasi Modul Sales dan Custom Report untuk Quotation, Sales Order, Invoice & Payment Receipt
 
-cukup update adds on ke odoo lalu install
+Cara install :
+
+extract file ini > Copy Folder NB_Sale ke path addons anda> install
