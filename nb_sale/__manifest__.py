@@ -4,15 +4,21 @@
     'version': '0.1',
     'depends': [
             'sale',
+        
     ],
     'data': [
-            'views/quotation_form.xml', # selalu gunakan koma
+                'views/quotation_form.xml', # selalu gunakan koma
+                'views/nb_sale_order_report.xml',
+                'views/paperformat.xml',
+        #     'views/kg_invoice_report.xml', # selalu gunakan koma
+        #     'views/sale_order_report.xml', # selalu gunakan koma
         #     'views/invoice_report.xml', # selalu gunakan koma
         #     'views/report_invoice_document.xml', # selalu gunakan koma
+        # selalu gunakan koma
             
     ],
     'qweb': [
-            # 'print/nama_template.xml',
+        #     'views/sale_order_report.xml',
     ],
     'sequence': 1,
     'auto_install': False,

@@ -10,8 +10,20 @@
                     <field name="kepada" />
                 </xpath>
                 <xpath expr="//field[@name='kepada']" position="after">
-                    <field name="perihal" />
+                    <field name="perihal" attrs="{'invisible': [('state', 'in', ['sale', 'done', 'cancel'])]}" />
                 </xpath>
+                <xpath expr="//field[@name='payment_term_id']" position="replace">
+                    <field name="pembayaran"/>
+                </xpath>
+                <xpath expr="//field[@name='date_order']" position="replace">
+                    <field name="tanggal_order" required="1"/>
+                </xpath>
+                <xpath expr="//field[@name='validity_date']" position="replace">
+                    <field name="tanggal_validasi" required="1"/>
+                </xpath>
+                 <xpath expr="//field[@name='confirmation_date']" position="replace">
+                     <field name="tanggal_konfirmasi" attrs="{'invisible': [('state', 'in', ['draft', 'sent', 'cancel'])]}"/>
+                 </xpath>   
             </field>
         </record>
     </data>
