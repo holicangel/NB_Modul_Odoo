@@ -29,19 +29,15 @@
     'auto_install': False,
     'installable': True,
     'application': True,
-    'category': 'Academy Day 1',
-    'summary': 'Catat penjualan sederhana',
+    'category': 'Custom Modul',
+    'summary': 'Modifikasi Sale dan Custom Report Untuk PT. Nusatama Berkah',
     'license': 'OPL-1',
-    'website': 'https://www.arkana.co.id/',
+    'website': 'https://www.nusatama.com/',
     'description': """
 'Nusatama Sale Modul'
 =============
 
-Modul ini digunakan untuk :
-
-1. ...
-
-2. ...
+Modifikasi Sale dan Custom Report Untuk PT. Nusatama Berkah
 
 # Deskripsi ini hanya akan terlihat jika application = False
 
