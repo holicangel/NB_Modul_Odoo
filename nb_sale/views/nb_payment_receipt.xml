@@ -11,7 +11,7 @@
                     <div class="row">
                  <table><tr> <td> <strong>No. Kwitansi</strong> </td><td width="50px"></td><td>: <span t-field="o.nomor_kwitansi"/></td>
                   </tr>
-                 <tr> <td> <strong> No. Purchase Order</strong></td><td width="50px"></td><td>: <span t-field="o.nomor_po"/></td> </tr>
+                 <tr> <td> <strong> No. Purchase Order</strong></td><td width="50px"></td><td>: <span t-field="o.name"/></td> </tr>
                    </table> 
                     </div>
                         

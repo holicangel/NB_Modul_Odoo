@@ -9,8 +9,9 @@
     ],
     'data': [
                 'views/quotation_form.xml', # selalu gunakan koma
-                # 'views/paperformat_aa.xml',
                 'views/paperformat.xml',
+                'views/paperformat_invoice.xml',
+                'views/paperformat_empat.xml',
                 'views/nb_sale_order_report.xml',
                 'views/nb_invoice_report.xml',
                 'views/nb_payment_receipt.xml',               

@@ -10,7 +10,7 @@
                     <page name="payment_receipt" string="Payment Receipt Detail">
                         <group>
                             <field name="nomor_kwitansi"/>
-                            <field name="nomor_po"/>
+                            
                             <field name="terbilang"/>
                             <field name="untuk"/>
                         </group>

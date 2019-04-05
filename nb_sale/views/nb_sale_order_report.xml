@@ -11,7 +11,7 @@
                             <center t-if="doc.state in ['draft','sent']"><h2>Quotation</h2></center>
                             <center t-if="doc.state not in ['draft','sent']"><h2>Sales Order</h2></center>
                             
-                            <center><u><span t-field="doc.name"/></u></center><br/>
+                            <center><u><i><span t-field="doc.name"/></i></u></center><br/>
                             <div class="col-xs-6">
                             <span t-if="doc.state not in ['draft','sent']">Ref No :</span>
                             <span t-if="doc.state in ['draft','sent']">Ref No :</span>
@@ -200,6 +200,7 @@
             name="nb_sale.nb_sale_order_print_template"
             file="nb_sale.nb_sale_order_print_template"
             report_type="qweb-pdf"
+            paperformat="nb_sale.paperformat_empat"
             menu="True"
                     
         />
