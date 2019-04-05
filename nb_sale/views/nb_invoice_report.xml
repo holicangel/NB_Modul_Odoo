@@ -206,7 +206,7 @@
         <report
             id="invoice_hardcopy"
             model="account.invoice"
-            string="NB Invoice"
+            string="NB Invoice Bahasa Indonesia"
             name="nb_sale.nb_invoice_template"
             file="nb_sale.nb_invoice_template"
             report_type="qweb-pdf"

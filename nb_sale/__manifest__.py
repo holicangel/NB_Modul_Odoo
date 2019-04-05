@@ -9,10 +9,11 @@
     ],
     'data': [
                 'views/quotation_form.xml', # selalu gunakan koma
+                # 'views/paperformat_aa.xml',
+                'views/paperformat.xml',
                 'views/nb_sale_order_report.xml',
                 'views/nb_invoice_report.xml',
-                'views/nb_payment_receipt.xml',
-                'views/paperformat.xml',
+                'views/nb_payment_receipt.xml',               
                 'views/dateformat.xml',
                 'views/nb_header.xml',
                 'views/nb_footer.xml',
@@ -29,15 +30,19 @@
     'auto_install': False,
     'installable': True,
     'application': True,
-    'category': 'Custom Modul',
-    'summary': 'Modifikasi Sale dan Custom Report Untuk PT. Nusatama Berkah',
+    'category': 'Academy Day 1',
+    'summary': 'Catat penjualan sederhana',
     'license': 'OPL-1',
-    'website': 'https://www.nusatama.com/',
+    'website': 'https://www.arkana.co.id/',
     'description': """
 'Nusatama Sale Modul'
 =============
 
-Modifikasi Sale dan Custom Report Untuk PT. Nusatama Berkah
+Modul ini digunakan untuk :
+
+1. ...
+
+2. ...
 
 # Deskripsi ini hanya akan terlihat jika application = False
 

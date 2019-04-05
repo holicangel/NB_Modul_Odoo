@@ -187,12 +187,12 @@
         <report
             id="nb_sale_order_hardcopy"
             model="sale.order"
-            string="NB Quotation/Sale Order"
+            string="NB Quotation/Sale Order Bahasa Indonesia"
             name="nb_sale.nb_sale_order_print_template"
             file="nb_sale.nb_sale_order_print_template"
             report_type="qweb-pdf"
-            
             menu="True"
+                    
         />
     </data>
 </odoo>

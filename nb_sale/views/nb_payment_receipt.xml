@@ -206,11 +206,12 @@
         <report
             id="paymentreceipt_hardcopy"
             model="account.invoice"
-            string="NB Payment Receipt"
+            string="NB Payment Receipt Bahasa Indonesia"
             name="nb_sale.nb_paymentreceipt_template"
             file="nb_sale.nb_paymentreceipt_template"
             report_type="qweb-pdf"
             menu ="True"
+            paperformat="paperformat"/> 
         />
     </data>
 </odoo>
