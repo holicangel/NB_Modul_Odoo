@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
     <odoo>
         <data>
-            <template id="external_layout_header_inherit" inherit_id="report.external_layout_header" priority="17">
+            <template id="external_layout_header_inherit" inherit_id="report.external_layout_header" priority="1">
                 <xpath expr="//div[@class='header']" position="replace">
                     <div class="header">
                         <div class="row">

@@ -1,5 +1,5 @@
 {
-    'name': 'Nusatama Sale Modul',
+    'name': 'Nusatama Sales Modul',
     'author': 'Handy',
     'version': '0.1',
     'depends': [
@@ -17,6 +17,7 @@
                 'views/dateformat.xml',
                 'views/nb_header.xml',
                 'views/nb_footer.xml',
+                'views/nb_invoice_form.xml',
              
        
       
@@ -30,21 +31,18 @@
     'auto_install': False,
     'installable': True,
     'application': True,
-    'category': 'Academy Day 1',
-    'summary': 'Catat penjualan sederhana',
+    'category': 'Custom Module',
+    'summary': 'Aplikasi Untuk Nusatama Untuk Modifikasi Sales dan Report Odoo',
     'license': 'OPL-1',
-    'website': 'https://www.arkana.co.id/',
+    'website': 'https://www.nusatama.com',
     'description': """
-'Nusatama Sale Modul'
+'Nusatama Sales Module'
 =============
 
 Modul ini digunakan untuk :
 
-1. ...
+Modifikasi untuk modul Sales pada Odoo dan Custom Report Quotation,SO,Invoice & Payment Receipt Untuk PT. Nusatama Berkah
 
-2. ...
-
-# Deskripsi ini hanya akan terlihat jika application = False
 
 """,
 

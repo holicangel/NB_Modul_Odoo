@@ -5,7 +5,7 @@
         <template id="nb_invoice_template">
             <t t-call="report.external_layout">
                 <t t-set="o" t-value="docs.with_context({'lang':docs.partner_id.lang})"/>                                                          
-                    <div class="page">
+                    <div class="page" style="margin-top:1px">
                         
                         
                         <center><h2>
@@ -16,13 +16,13 @@
                             <span t-if="o.type == 'out_refund'">Refund</span>
                             <span t-if="o.type == 'in_refund'">Vendor Refund</span>
                             <span t-if="o.type == 'in_invoice'">Vendor Bill</span>
-                            <span t-field="o.number"/>
+                            
                             
                         </h2></center>
                         
                         <div class="col-xs-3 pull-right">
-                            <p>No Invoice :</p>
-                            <p t-if="o.date_invoice">Tgl (Date) :<span t-field="o.date_invoice"/></p>
+                            <p>No Invoice : <span t-field="o.number"/></p>
+                            <p t-if="o.date_invoice">Tgl (Date) : <span t-field="o.date_invoice"/></p>
                             <p t-if="o.origin"> Purchase Order : <span t-field="o.origin"/></p>
                             <p>Surat Jalan :</p>
                             <!-- <span t-if="o.date_due and o.type == 'out_invoice' and (o.state == 'open' or o.state == 'paid')">
@@ -181,21 +181,25 @@
                                 <p>Bank Permata Cab Kemang Pratama Bekasi</p>
                                 <p>No. ACC : IDR &amp;nbsp; 121 648 7865</p></h4></td>
                                 <td></td>
-                                <td height="25px">Bekasi, <span t-field="o.date_invoice"/></td>
+                                <td height="25px">Bekasi, <span t-field="o.date_invoice"/>
+                                
+                                </td>
                             </tr>
                             <tr style="border:none;">
                                 <td style="border:none;"></td>
                                 <td style="border:none;"></td>
-                                <td style="border:none;"><strong><u>Ismu Prasetyo</u></strong></td>
+                                <td style="border:none;"><strong> <img src="\nb_sale\static\src\img\tanda_tangan.png" width="67%"/>
+                                <br/>
+                                <br/><u>Ismu Prasetyo</u></strong></td>
                             </tr>
                             <tr style="border:none;"><td style="border:none;"></td>
                             <td style="border:none;"></td>
                             <td style="border:none;">Direktur</td></tr>
                             
                         </table>
-                        <p t-if="o.payment_term_id">
+                        <!-- <p t-if="o.payment_term_id">
                             <span t-field="o.payment_term_id.note"/>
-                        </p>
+                        </p> -->
                         <p t-if="o.fiscal_position_id.note">
                             <strong>Fiscal Position Remark:</strong>
                             <span t-field="o.fiscal_position_id.note"/>

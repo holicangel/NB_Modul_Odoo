@@ -2,19 +2,19 @@
 <odoo>
     <data>
         <record model="report.paperformat" id="paperformat">
-            <field name="name">A6</field>
+            <field name="name">A5</field>
             <field name="default" eval="False" />
-            <field name="format">a5</field> <!-- Tips : Bisa pilih ukuran yg sudah ada -->
+            <field name="format">A5</field> <!-- Tips : Bisa pilih ukuran yg sudah ada -->
             <field name="format">custom</field>
             <!-- <field name="page_width">50</field>
             <field name="page_height">500</field> -->
             <field name="orientation">Landscape</field>
-            <field name="margin_top">10</field>
-            <field name="margin_bottom">20</field>
+            <field name="margin_top">40</field>
+            <field name="margin_bottom">0</field>
             <field name="margin_left">7</field>
             <field name="margin_right">7</field>
             <field name="header_line" eval="False" />
-            <field name="header_spacing">35</field> <!-- Tips : Hide unnecessary header -->
+            <field name="header_spacing">35</field> <!--Tips : Hide unnecessary header-->
         </record>
     </data>
 </odoo>

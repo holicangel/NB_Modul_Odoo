@@ -6,6 +6,7 @@ class SaleOrder(models.Model):
 
     perihal = fields.Char(string='Subject')
     kepada = fields.Char(string='Receiver Name')
+    
     # tanggal_order = fields.Date(string="Tanggal Dibuat")
     # tanggal_validasi = fields.Date(string="Tanggal Validasi")
     # pembayaran = fields.Selection([
@@ -15,8 +16,8 @@ class SaleOrder(models.Model):
 
   
 
-    tanggal_order = fields.Date(string='Tanggal Penawaran', default=fields.Date.today())
-    tanggal_validasi = fields.Date(string='Masa Berlaku')
-    tanggal_konfirmasi = fields.Date(string='Tanggal Validasi SO', default=fields.Date.today())
+    # tanggal_order = fields.Date(string='Tanggal Penawaran', default=fields.Date.today())
+    # tanggal_validasi = fields.Date(string='Masa Berlaku')
+    # tanggal_konfirmasi = fields.Date(string='Tanggal Validasi SO', default=fields.Date.today())
 
     

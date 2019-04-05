@@ -8,12 +8,16 @@
                     <div class="page">
                         <div class="oe_structure"/>
                         <div class="row">
+                            <center t-if="doc.state in ['draft','sent']"><h2>Quotation</h2></center>
+                            <center t-if="doc.state not in ['draft','sent']"><h2>Sales Order</h2></center>
                             
+                            <center><u><span t-field="doc.name"/></u></center><br/>
                             <div class="col-xs-6">
                             <span t-if="doc.state not in ['draft','sent']">Ref No :</span>
                             <span t-if="doc.state in ['draft','sent']">Ref No :</span>
-                            <span t-field="doc.name"/><p></p>
+                            <span t-field="doc.client_order_ref"/><p></p>
                             <p></p>
+                             
                                 <strong t-if="doc.partner_shipping_id == doc.partner_invoice_id">Kepada Yth.</strong>
                                 <strong t-if="doc.partner_shipping_id != doc.partner_invoice_id">Invoicing address:</strong>
                                 <div t-field="doc.partner_invoice_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;, &quot;fax&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
@@ -31,10 +35,10 @@
                                 <strong t-if="doc.state in ['draft','sent']"></strong>
                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Jakarta, <span t-field="doc.date_order" t-field-options='{"format": "dd/MMM/yyyy"}'/>
                                 <p></p>
-                                <p t-if="doc.client_order_ref" class="col-xs-3">
+                                <!-- <p t-if="doc.client_order_ref" class="col-xs-3">
                                 Cust Ref :
                                 <span t-field="doc.client_order_ref"/>
-                            </p>
+                            </p> -->
                                 
                             </div>
                         </div>
@@ -53,10 +57,10 @@
                                 <strong>Salesperson:</strong>
                                 <p t-field="doc.user_id"/>
                             </div>-->
-                            <div name="payment_term" t-if="doc.payment_term_id" class="col-xs-3">
+                            <!-- <div name="payment_term" t-if="doc.payment_term_id" class="col-xs-3">
                                 <strong>Payment Terms:</strong>
                                 <p t-field="doc.payment_term_id"/>
-                            </div>
+                            </div> -->
                         </div>
 
                         <!-- Is there a discount on at least one line? -->
@@ -159,11 +163,16 @@
                                 </table>
                             </div>
                         </div>
-
+                        <p></p>
+                      
                         <p t-field="doc.note"/>
+                        <!-- <div name="payment_term" t-if="doc.payment_term_id" class="col-xs-3">
+                                <strong>Payment Terms:</strong>
+                                <p t-field="doc.payment_term_id"/>
+                        </div>
                         <p t-if="doc.payment_term_id.note">
                             <span t-field="doc.payment_term_id.note"/>
-                        </p>
+                        </p> -->
                         <p id="fiscal_position_remark" t-if="doc.fiscal_position_id and doc.fiscal_position_id.note">
                             <strong>Fiscal Position Remark:</strong>
                             <span t-field="doc.fiscal_position_id.note"/>
@@ -173,8 +182,8 @@
                         <p><strong>PT. NUSATAMA BERKAH</strong></p>
                         <p>
                         </p>
-                        <p><br/><br/><br/></p>
                         <p></p>
+                        <p><img src="\nb_sale\static\src\img\tanda_tangan.png" width="20%"/></p>
                         <Strong><u>Bambang Susilo</u></Strong>
                         <p>Direktur Utama</p>
                         
