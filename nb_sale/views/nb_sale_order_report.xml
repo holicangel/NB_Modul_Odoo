@@ -21,7 +21,7 @@
                                 <strong t-if="doc.partner_shipping_id == doc.partner_invoice_id">Kepada Yth.</strong>
                                 <strong t-if="doc.partner_shipping_id != doc.partner_invoice_id">Invoicing address:</strong>
                                 <div t-field="doc.partner_invoice_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;, &quot;fax&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
-                                <p t-if="doc.state in ['draft','sent']"><strong><u><i>Up.<span t-field="doc.kepada"/></i></u></strong></p>
+                                <p t-if="doc.state in ['draft','sent']"><strong><u><i>Up. <span t-field="doc.kepada" t-options="{&quot;contact&quot;: [&quot;name&quot;]}"/></i></u></strong></p>
                                 <p t-if="doc.partner_invoice_id.vat">VAT: <span t-field="doc.partner_invoice_id.vat"/></p>
                                 <div t-if="doc.partner_shipping_id != doc.partner_invoice_id" class="mt8">
                                     <strong>Shipping address:</strong>
@@ -183,7 +183,7 @@
                         <p>
                         </p>
                         <p></p>
-                        <p><img src="\nb_sale\static\src\img\tanda_tangan.png" width="20%"/></p>
+                        <p><img src="\nb_sale\static\src\img\bambangttd.png" width="35%"/></p>
                         <Strong><u>Bambang Susilo</u></Strong>
                         <p>Direktur Utama</p>
                         

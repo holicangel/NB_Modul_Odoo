@@ -4,10 +4,13 @@
     'version': '0.1',
     'depends': [
             'sale',
+            'account',
             
         
     ],
     'data': [
+                'views/button.xml',
+                'views/nb_ir_sequence_data.xml',
                 'views/quotation_form.xml', # selalu gunakan koma
                 'views/paperformat.xml',
                 'views/paperformat_invoice.xml',

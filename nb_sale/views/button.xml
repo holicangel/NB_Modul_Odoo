@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="button_invoice_form">
+            <field name="name">button.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                        
+                        <button name="tombol_receipt" string="Create Payment Receipt" type="object" class="oe_highlight" attrs="{'invisible': ['|',('type', '=', 'out_refund'), ('state', 'not in', ('open','proforma2','paid'))]}" />
+                    
+                </xpath>
+
+                
+            </field>
+        </record>
+    </data>
+</odoo>

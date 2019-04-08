@@ -5,7 +5,9 @@ class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
     perihal = fields.Char(string='Subject')
-    kepada = fields.Char(string='Receiver Name')
+    
+
+    kepada = fields.Many2one(comodel_name='res.partner', string='Receiver Name')
     
     # tanggal_order = fields.Date(string="Tanggal Dibuat")
     # tanggal_validasi = fields.Date(string="Tanggal Validasi")
