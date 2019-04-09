@@ -19,6 +19,7 @@
                 'views/nb_invoice_report.xml',
                 'views/nb_payment_receipt.xml',               
                 'views/dateformat.xml',
+                'views/wizard.xml',
                 'views/nb_header.xml',
                 'views/nb_footer.xml',
                 'views/nb_invoice_form.xml',
