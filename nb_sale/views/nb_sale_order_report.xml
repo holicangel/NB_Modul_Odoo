@@ -70,7 +70,7 @@
                             <table class="table table-condensed table-hover border">
                                 <thead>
                                     <tr>
-                                        
+                                        <th> No. </th>
                                         <th>Uraian</th>
                                         <th class="text-right">Qty</th>
                                         <th class="text-right">Unit Harga</th>
@@ -94,7 +94,7 @@
                                         <!-- Lines associated -->
                                         <t t-foreach="layout_category['lines']" t-as="l">
                                             <tr>
-                                                
+                                                <td><span t-field="l.sequence2"/></td>
                                                 <td><span t-field="l.name"/></td>
                                                 <td class="text-right">
                                                     <span t-field="l.product_uom_qty"/>

@@ -5,6 +5,9 @@
     'depends': [
             'sale',
             'account',
+            'sale_order_line_sequence',
+            'num_to_words',
+            'account_invoice_line_number',
             
         
     ],

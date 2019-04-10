@@ -1,0 +1,20 @@
+<odoo>
+    <record id="num_to_words_inherit_view_account_config_settings" model="ir.ui.view">
+        <field name="name">Add num to words configuration</field>
+        <field name="model">account.config.settings</field>
+        <field name="inherit_id" ref="account.view_account_config_settings"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='accounting']" position="after">
+                <group string="Convert amount to text in invoice">
+                    <label for="text_amount_language_currency" string="Text amount"/>
+                    <div>
+                        <div>
+                            <label for="text_amount_language_currency"/>
+                            <field name="text_amount_language_currency" class="oe_inline"/>
+                        </div>
+                    </div>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

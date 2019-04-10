@@ -21,7 +21,7 @@
                         </group>
                     </group>
                     <footer>
-                        <button  name="create" type="object" string="Save" class="btn_primary"/>
+                        <button  name="create_1" type="object" string="Save" class="oe_highlight"/>
                         or
                         <button string="Cancel" class="oe_link" special="cancel" />
                     </footer>

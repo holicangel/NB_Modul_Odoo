@@ -11,8 +11,11 @@
                         <group>
                             <field name="nomor_kwitansi"/>
                             
-                            <field name="terbilang"/>
+                            
                             <field name="untuk"/>
+                            <field name="text_amount"/>
+
+                            
                         </group>
                     </page>
                 </xpath>

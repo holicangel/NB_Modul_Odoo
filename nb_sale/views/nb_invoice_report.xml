@@ -81,6 +81,7 @@
                         <table class="table table-condensed">
                             <thead>
                                 <tr>
+                                    <th>No.</th>
                                     <th>Nama Barang (Description)</th>
                                     <th class="hidden">Source Document</th>
                                     <th class="text-right">QTY</th>
@@ -92,6 +93,7 @@
                             </thead>
                             <tbody class="invoice_tbody">
                                 <tr t-foreach="o.invoice_line_ids" t-as="l">
+                                    <td><span t-field="l.number"/></td>
                                     <td><span t-field="l.name"/></td>
                                     <td class="hidden"><span t-field="l.origin"/></td>
                                     <td class="text-right">

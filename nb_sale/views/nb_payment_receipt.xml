@@ -43,7 +43,7 @@
                       <tr><td>
                       <strong><u>Sebesar</u><br/>The Sum Of</strong></td><td width="50px">
                       </td>
-                      <td>: <span t-field="o.terbilang"/></td>
+                      <td>: <span t-field="o.text_amount"/></td>
                       </tr>
                       <tr height="50px"><td></td><td></td><td></td></tr>
                       <tr><td>

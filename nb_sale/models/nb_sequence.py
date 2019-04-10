@@ -1,15 +1,15 @@
 from odoo import api, models, _
 
-class SaleOrder(models.Model):
+class AccountInvoice(models.Model):
 
-    _inherit = 'sale.order'
+    _inherit = 'account.invoice'
 
 
 @api.model
 def create(self, vals):
 
-    record = super(SaleOrder, self).create(vals)
+    record = super(AccountInvoice, self).create(vals)
 
-    record['name'] = self.env['ir.sequence'].next_by_code('new.sale.order') or _('New')
+    record['name'] = self.env['ir.sequence'].next_by_code('payment.receipt') or _('New')
 
     return record

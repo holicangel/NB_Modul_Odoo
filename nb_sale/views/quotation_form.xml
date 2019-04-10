@@ -12,6 +12,10 @@
                 <xpath expr="//field[@name='kepada']" position="after">
                     <field name="perihal" attrs="{'invisible': [('state', 'in', ['sale', 'done', 'cancel'])]}" />
                 </xpath>
+                <xpath expr="//button[@name='print_quotation']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                
                 <!-- <xpath expr="//field[@name='payment_term_id']" position="attributes">
                     <attribute name="string">Cara Bayar</attribute>
                 </xpath> -->

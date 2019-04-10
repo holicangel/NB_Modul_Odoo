@@ -9,13 +9,7 @@ class PaymentReceipt(models.Model):
     terbilang = fields.Char(string='Terbilang')
     untuk = fields.Char(string='Untuk Pembayaran')
 
-    
-    # @api.model
-    # def create_1(self):
-
-    #     payment_receipt_create = super(AccountInvoice,self).create()
-    #     return payment_receipt_create
-        
+  
         
         
   
