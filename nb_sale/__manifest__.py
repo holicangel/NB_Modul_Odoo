@@ -9,6 +9,7 @@
         
     ],
     'data': [
+                'views/wizard.xml',
                 'views/button.xml',
                 'views/nb_ir_sequence_data.xml',
                 'views/quotation_form.xml', # selalu gunakan koma
@@ -19,9 +20,9 @@
                 'views/nb_invoice_report.xml',
                 'views/nb_payment_receipt.xml',               
                 'views/dateformat.xml',
-                'views/wizard.xml',
                 'views/nb_header.xml',
                 'views/nb_footer.xml',
+                # 'views/nb_payment_receipt_form.xml',
                 'views/nb_invoice_form.xml',
              
        

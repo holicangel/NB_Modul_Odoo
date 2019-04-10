@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="create_payment_receipt_wizard" model="ir.ui.view" >
-            <field name="name">payment.recept.wizard</field>
-            <field name="model">payment.recept.wizard</field>
+        <record id="payment_receipt_wizard" model="ir.ui.view" >
+            <field name="name">payment.receipt.wizard</field>
+            <field name="model">payment.receipt.wizard</field>
             <field name="arch" type="xml">
                 <form>
                     <div style="white-space: pre-line;">
-                        <p><h5>Sistem akan ..</h5>
-                        Fitur ini bisa digunakan untuk keperluan sbb.. :
-                        1. Perubahan nomor Voucher
-                        2. Adanya perubahan <b>Expiry Date</b> dari Voucher</p>
+                        <p><h2>Payment Receipt Form</h2>
+                        </p>
                     </div>
                     <group>
                         <group>
-                            <field name="name"/>
+                            <field name="nomor_kwitansi"/>
+                            <!-- <field name="terbilang"/>
+                            <field name="untuk"/> -->
+                            
                         </group>
                         <group>
                         </group>
                     </group>
                     <footer>
-                        <!-- <button type="object" name="process_wizard" string="Process" class="oe_highlight"/> -->
+                        <button  name="create" type="object" string="Save" class="btn_primary"/>
                         or
                         <button string="Cancel" class="oe_link" special="cancel" />
                     </footer>
@@ -28,10 +29,10 @@
             </field>
         </record>
         <act_window
-            id="action_create_payment_receipt_wizard"
+            id="action_payment_receipt_wizard"
             name="Confirm"
             res_model="payment.receipt.wizard"
-            src_model="account"
+            src_model="account.invoice"
             view_mode="form"
             multi="True"
             target="new"

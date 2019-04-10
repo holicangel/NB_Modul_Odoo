@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//header" position="inside">
                         
-                        <button name="test_aja" string="" type="action" class="oe_highlight" attrs="{'invisible': ['|',('type', '=', 'out_refund'), ('state', 'not in', ('open','proforma2','paid'))]}" />
+                        <button name="%(nb_sale.action_payment_receipt_wizard)d" string="Create Payment Receipt" type="action" class="oe_highlight" attrs="{'invisible': ['|',('type', '=', 'out_refund'), ('state', 'not in', ('open','proforma2','paid'))]}" />
                     
                 </xpath>
 
